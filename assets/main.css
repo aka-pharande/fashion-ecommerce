@@ -1,0 +1,679 @@
+/*
+ * Student Name: Aakanksha Pharande
+ * Student ID: 041075173 
+ * Course: CST8117 - Cross-Platform Web Design
+ * Semester: 1
+ * Assignment: 4
+ * Date Submitted: 11/12/2022
+ */
+
+
+/*
+ * Styling for heading and text
+ *  - All headings use single font-family (Times New Roman)
+ *  - Other text is differentiated from the Heading using Arial font
+ */
+
+/*
+ * Colour palette technique
+ * An analogous color scheme has been implemented while designing 
+ * this website. It has a combination of three colors which are 
+ * next to each other on the color wheel. It comprises one dominant 
+ * color, which is a "blue",  then "violet" is the supporting color 
+ * and the third color "lavender" (accent color) is a combination of 
+ * the first two colors. This color scheme is very versatile and evokes 
+ * a feeling of luxury, royalty and trust. 
+ */
+
+/*
+ * Color scheme
+ * 1. Ice Cold: #a0d2eb
+ * 2. Freeze Purple: #e5eaf5
+ * 3. Medium Purple: #d0bdf4
+ * 4. Purple Pain: #8458B3
+ * 5. Heavy Purple: #a28089
+ * 6. #494D5F
+ */
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Prata', serif;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5em;
+  font-family: 'Prata', serif;
+}
+
+h3,
+h5,
+h6 {
+  text-align: center;
+  font-family: 'Prata', serif;
+}
+
+h4 {
+  font-size: 1.25em;
+  text-align: center;
+}
+
+p,
+ol,
+ul {
+  text-align: justify;
+  font-size: 1.2em;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  margin: 0; 
+}
+/*
+ * Styling for Navigation Bar using ID selector
+ */
+
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #494D5F;
+  color: white;
+  white-space: nowrap;
+  border-radius: 4px;
+}
+
+.navbar:before, .navbar:after  {
+  content: none !Important;
+}
+
+#logo-container {
+  width: 70px;
+  display: flex;
+}
+
+#logo-container img {
+  width: 100%;
+}
+
+#search_box {
+  max-width: 40%;
+  min-width: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
+  box-sizing: content-box;
+}
+
+#search_box input[type="text"] {
+  width: 100%;
+  font-size: 1em;
+  box-shadow: 1px 5px 1px grey inset;
+}
+
+.navbar-links {
+  width: 85%;
+  display: flex;
+  height: 100%;
+  justify-content: right;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar-links li:hover {
+  background-color: #d0bdf4;
+}
+
+.hamburger {
+  position: absolute;
+  top: 1.1rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.hamburger .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* Move navbar links under the hamburger icon when the screen width goes below 800px */
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  #search_box {
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: .5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
+
+
+#main {
+  background-color: #e5eaf5;
+}
+
+#main-background {
+  background-color: #e5eaf5;
+}
+
+/*
+ * Styling for skip navigation link using class selector
+ */
+.skip {
+  position: absolute;
+  left: 1000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  color: whitesmoke;
+}
+
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
+
+/*
+ * Styling for Main section using class selector
+ */
+.special-color {
+  color: #8458B3;
+}
+
+.cover {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.cover img {
+  width: 100%;
+}
+
+.image-container {
+  width: 80%;
+  float: left;
+}
+
+.image-properties figcaption {
+  text-align: center;
+}
+
+.text-container {
+  width: 20%;
+  float: left;
+  padding-right: 2%;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Make images full size and push text to next column for smaller screens (Phones, spilt screen browser in laptop) */
+@media (max-width: 800px) {
+  .cover {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .image-container {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .text-container {
+    width: 100%;
+    padding-right: 0px;
+    padding: 0px;
+  }
+
+  .text-container p {
+    padding: 2%;
+  }
+}
+
+/* Apply the same styling as above for landscpace mode in phones */
+@media (orientation: landscape) and (max-height: 450px) {
+  .cover {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .image-container {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .text-container {
+    width: 100%;
+    padding-right: 0px;
+    padding: 0px;
+  }
+
+  .text-container p {
+    padding: 2%;
+  }
+}
+
+.inner {
+  color: white;
+  text-align: center;
+  width: 30%;
+  background-color: black;
+  opacity: 70%;
+  font-weight: bold;
+  border-radius: 30px;
+}
+
+.shop-now {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.button-properties {
+  background-color: #a0d2eb;
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: underline;
+  display: inline-block;
+  font-weight: bold;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  font-size: 1.0em;
+  
+}
+
+.button-properties:hover {
+  background-color: #d0bdf4
+}
+
+.target-link {
+  color: #8458B3;
+}
+
+.icon-properties img {
+  width: 50%;
+  position: relative;
+  top: 20px;
+  left: 0%;
+  padding: 10px;
+  opacity: 0.7;
+}
+
+mark {
+  background-color: #494D5F;
+  color: white;
+}
+
+.icon-properties li {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.icon-properties {
+  padding-inline-start: 0px;
+}
+
+/*
+ * Styling for Feature section using class selector
+ */
+.feature_section {
+  background-color: rgba(160, 210, 235, .6);
+  width: 100%;
+  display: inline-block;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.col {
+  float: left;
+  max-width: 31%;
+  padding: 1%;
+  flex-grow: 1;
+}
+
+.col img {
+  width: 100%;
+  font-size: 1vw;
+  box-shadow: 1em 1em #494D5F;
+  margin-bottom: 1%;
+}
+
+/* Convert 3 column to 1 column in the feature section and 3 columns to 2 columns on the products page */
+@media (max-width: 800px) {
+  .col {
+    max-width: 47%;
+  }
+
+  .feature_section .col {
+    max-width: 97%;
+  }
+}
+
+/*
+ * Styling for Footer using class selector
+ */
+
+.footer {
+  padding: 1%;
+  text-align: left;
+  color: white;
+  background-color: #494D5F;
+}
+
+.footer-copyright {
+  background-color: #e5eaf5;
+  color: black;
+  height: 50px;
+  padding: 0.2%;
+}
+
+.footer h3 {
+  color: #d0bdf4;
+  font-weight: bold;
+}
+
+.column {
+  float: left;
+  width: 10%;
+  padding: 2%;
+  text-align: left;
+} 
+
+.links {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  padding-inline-start: 0px;
+}
+
+.links li {
+  list-style: none;
+  border-right: 1px solid grey;
+  padding-right: 1%;
+  padding-left: 1%;
+  height: 45px;
+}
+
+.links li a:link {
+  color: white;
+  font-size: 0.5em;
+  text-decoration: none;
+}
+
+.links li a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.links li a:hover {
+  color: #d0bdf4;
+}
+
+
+/*
+ * Styling for Contact us section
+ */
+
+.contact-info {
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  width:100%;
+  background-color: #d0bdf4;
+}
+
+input[type=text],[type=tel], [type=email],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: arial;
+}
+
+
+.mandotory-field {
+  color: red;
+}
+
+/* Styling to form buttons */
+button[type=submit],[type=reset] {
+  background-color: #a0d2eb;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type=submit]:hover {
+  background-color: #d0bdf4;
+  color: black;
+}
+
+button[type=reset]:hover {
+  background-color: #d0bdf4;
+  color: black;
+}
+
+/* Styling the overall form using id selector */
+#form {
+  border-radius: 10px;
+  background-color: lightgray;
+  padding: 30px;
+  margin: 40px 80px;
+  box-shadow: 0 12px 6px -6px #777;
+}
+
+#contact-form > p > label {
+  display: block;
+}
+
+/* Styling the success message */
+#success-message {
+  background-color: green;
+  color: white;
+}
+
+/*
+ * Styling for About us page using class selector
+ */
+
+.about_us h1 {
+  letter-spacing: 0.1em;
+}
+
+.special-text {
+  font-family: 'Freehand', cursive;
+  color: #8458B3;
+}
+
+/*
+ * Styling for Terms/Conditions & Privacy Policy page using class selector
+ */
+
+.privacy {
+  display: inline;
+  color: dimgray;
+}
+
+.privacy div {
+  width: 80%;
+  margin: auto;
+}
+
+.bold {
+  font-weight: bold;
+  color: black;
+}
+
+.privacy h4 {
+  width: 100%;
+  text-align: justify;
+  font-size: 1.1em;
+  font-family: 'Lato', sans-serif;
+  text-decoration: underline;
+  color: black;
+  text-transform: uppercase;
+}
+
+.main-heading {
+  font-size: 2em;
+  font-family: 'Lato', sans-serif;
+  text-decoration: underline;
+  text-align: center;
+  color: black;
+}
+
+/*
+ * Styling for Cart Page
+ */
+.cart-pagelayout {
+  max-width: 1400px;
+  margin: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.cart-information {
+  margin: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+th {
+  text-align: left;
+  padding: 10px;
+  color: black;
+  background: #d0bdf4;
+  font-weight: bold;
+}
+
+td {
+  padding: 10px 5px;
+}
+
+td input {
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+
+p.price-tag {
+  font-size: 1em;
+}
+
+td a {
+  color: black;
+  font-size: 1em;
+}
+
+td img {
+  width: 10%;
+  height: 20%;
+  margin-right: 10px;
+}
+
+.total-price {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.total-price table {
+  border-top: 4px solid #d0bdf4;
+  width: 100%;
+  max-width: 400px;
+}
+
+.highlight {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+td:last-child {
+  text-align: right;
+}
+
+th:last-child {
+  text-align: right;
+}

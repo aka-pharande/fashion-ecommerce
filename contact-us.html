@@ -1,0 +1,105 @@
+<!--
+  -- Student Name: Aakanksha Pharande
+  -- Student ID: 041075173
+  -- Course: CST8117 - Cross-Platform Web Design
+  -- Semester: 1
+  -- Assignment: 4
+  -- Date Submitted: 11/12/2022
+  -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact us</title>
+    <script defer src="assets/common.js"></script>
+    <script src="assets/jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Prata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/main.css">
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="en-us">
+    <meta keywords="Fashion, Women, Dresses, Stylish">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <section id="header"></section>
+    <!-- 
+      -- Contact Us section 
+      -- This section displays the contact information
+      -->
+    <section id="contact-us">
+      <div class = "contact-info">
+        <h1> Contact Us </h1>
+        <p>
+        <h3>You can reach us at</h3>
+        <h4> Our address: XYZ375 Nordsorm Road, Ottawa, Canada</h4>
+        <address>
+          <a href="mailto:foo.bar@hercloset.com">Email: foo.bar@hercloset.com</a><br>
+          <a href="tel:+16139791000">Phone: (613) 979 1000</a><br>
+          <a href="https://www.instagram.com/hercloset">Instagram: @hercloset</a>
+        </address>
+        </p>
+      </div>
+    </section>
+    <div id="form-style"></div>
+    <div id="form">
+      <h2> Business Enquiry </h2>
+      <br>
+      <form id="contact-form" action="contact-us.html" method="POST">
+        <p><label for="first-name">
+          First-name<span class="mandotory-field">*</span>: <input id="first-name" type="text" placeholder="Your first-name.." required>
+          </label>
+        </p>
+        <p><label for="last-name">
+          Last-name:<input id="last-name" type="text" placeholder="Your last-name..">
+          </label>
+        </p>
+        <p><label for="phone">
+          Phone-number: <input type="tel" id="phone-number" placeholder="Ex-1234567890" pattern="[0-9]{10}">
+          </label>
+        </p>
+        <p><label for="email">
+          Email-ID: <input type="email" id="email" placeholder="johndoe@example.com">
+          </label>
+        </p>
+        <p><label for="comments">
+          Comments<span class="mandotory-field">*</span>: <textarea id="comments" placeholder="Please drop your concerns..."required minlength="3"></textarea>
+          </label>
+        </p>
+        <p><label for="consent">
+          I agree to the <a href="terms.html" target="_blank" class="target-link">Terms & Conditions</a> of this page<input id="consent" type= "checkbox" required>
+          </label>
+        </p>
+        <p>
+          <button type="reset" id="clear">Clear</button>
+          <span id="clear-message"></span>
+          &nbsp;
+          <button type="submit" id="submit-form">Submit</button>
+        </p>
+      </form>
+      <!-- Source: https://getbootstrap.com/docs/5.2/components/modal/
+        Author: Bootstrap
+        Date Retrieved: 10/12/2022
+        -->     
+      <div id="modalStyle" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Success</h5>
+              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-message">
+              <p>Thank you! We will get back to you soon!</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <footer id="footer"></footer>
+  </body>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="assets/main.js"></script>
+</html>

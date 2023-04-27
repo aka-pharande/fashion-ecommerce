@@ -1,0 +1,82 @@
+<!--
+  -- Student Name: Aakanksha Pharande
+  -- Student ID: 041075173
+  -- Course: CST8117 - Cross-Platform Web Design
+  -- Semester: 1
+  -- Assignment: 4
+  -- Date Submitted: 11/12/2022
+  -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <script defer src="assets/common.js"></script>
+    <script defer src="assets/main.js"></script>
+    <script src="assets/jquery-3.6.1.min.js"></script>
+    <title>Products</title>
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="assets/products.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Prata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Font Awesome/css/all.css">
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="en-us">
+    <meta keywords="Fashion, Women, Dresses, Stylish">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <section id= "main-background">
+      <section id="header"></section>
+      <!-- 
+        All Products
+        -->
+      <section class="products_section">
+        <div class="products">
+          <div class="head-background">
+            <h1>
+              Our Exclusive Products 
+              <p>Browse our women’s outfits that show off your beauty and personality. </p>
+            </h1>
+          </div>
+          <div class="filter">
+            <select class="filter-tab1">
+              <option> By Price Range</option>
+              <option> $ 20 - $ 30</option>
+              <option> $ 30 - $ 60 </option>
+              <option> $ 60 - $ 90 </option>
+              <option> Above $ 100</option>
+            </select>
+            <select class="filter-tab2">
+              <option> By Keywords</option>
+              <option> A</option>
+              <option> B</option>
+              <option> C</option>
+              <option> D</option>
+            </select>
+            <select class="filter-tab3">
+              <option> By Color</option>
+              <option> Blue</option>
+              <option> Red</option>
+              <option> Pink</option>
+              <option> Black</option>
+            </select>
+            <button class="filter-button"><i class="fa-solid fa-filter"></i> Filter</button>
+            <!-- <select class="sorting">
+              <option> Default Sorting</option>
+              <option> Sort by Name: ASC</option>
+              <option> Sort by Name: DESC</option>
+              <option> Sort by Price: ASC</option>
+              <option> Sort by Price: DESC</option>
+            </select> -->
+          </div>
+        </div>
+        <div class="features" id="products_div"></div>
+        <div class="paging">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>&#8594;</span>
+      </section>
+    </section>
+    <footer id="footer"></footer>
+  </body>
+</html>

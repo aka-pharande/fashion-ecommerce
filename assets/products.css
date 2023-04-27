@@ -1,0 +1,276 @@
+/*
+ * Student Name: Aakanksha Pharande
+ * Student ID: 041075173 
+ * Course: CST8117 - Cross-Platform Web Design
+ * Semester: 1
+ * Assignment: 4
+ * Date Submitted: 11/12/2022
+ */
+
+/*
+ * Styling for products section using class selector
+ */
+
+.products_section {
+  background-color: #e5eaf5;
+  padding: 2%;
+}
+
+.features::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.head-background {
+  background-color: rgba(132, 88, 179, 0.4);
+  width: 100%;
+}
+
+.products h1 {
+  text-align: center;
+}
+
+.products h1 p {
+  text-align: center;
+  left: 40px;
+  font-size: 0.5em;
+  color: #494D5F;
+  font-weight: bold;
+}
+
+.filter {
+  display: flex;
+  width: 100%;
+  margin: 10px;
+}
+
+.filter select {
+  margin: 10px;
+  padding: 10px;
+}
+
+.filter-tab1 {
+  border: none;
+  border-radius: 20px;
+  background-color: #a0d2eb;
+  box-shadow: 0 12px 6px -6px #777;
+}
+
+.filter-tab2 {
+  border: none;
+  border-radius: 20px;
+  background-color: #a0d2eb;
+  box-shadow: 0 12px 6px -6px #777;
+}
+
+.filter-tab3 {
+  border: none;
+  border-radius: 20px;
+  background-color: #a0d2eb;
+  box-shadow: 0 12px 6px -6px #777;
+}
+
+.filter-button {
+  background-color: #a0d2eb;
+  box-shadow: 0 12px 6px -6px #777;
+  border: none;
+  padding: 10px 10px;
+  text-align: center;
+  display: inline-block;
+  font-weight: bold;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.filter-button:hover {
+  background-color: #d0bdf4
+}
+
+.sorting {
+  float: right;
+  border: 1px solid #494D5F;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: lightgray;
+}
+
+select:focus {
+  outline: none;
+}
+
+
+.paging span {
+  display: inline-block;
+  border: 1px solid #494D5F;
+  background-color: #a0d2eb;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 10px;
+}
+
+.paging span:hover {
+  background: #494D5F;
+  color: white;
+}
+
+/*
+ * Styling for Single Product details page
+ */
+ .small-container {
+  /* max-width: 50%; */
+  margin: auto;
+  /* padding-left: 25px;
+  padding-right: 20px; */
+}
+
+
+.product {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: flex-start;
+}
+
+.small-img-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.product-image {
+  width: 40%;
+  float: left;
+  background-color: #a0d2eb;
+  box-shadow: 0 12px 6px -6px #777;
+  padding: 1%;
+  border-radius: 25px;
+  margin: 5%;
+}
+
+.product-image img {
+  width: 100%;
+  padding: 0;
+  border-radius: 25px;
+}
+
+.small-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+.single-product .col-2 {
+  padding: 20px;
+}
+
+.product-info {
+  width: 40%;
+  margin: 5%;
+  margin: auto;
+}
+
+.product-info h1 {
+  font-size: 3em;
+  line-height: 60px;
+  margin: 1%;
+}
+
+.product-info select {
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #a0d2eb;
+  box-shadow: 0 12px 6px -6px #777;
+}
+
+.single-product h4 {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.single-product input {
+  width: 50px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 1.2em;
+  margin-right: 10px;
+  border: 1px blue;
+  background-color: grey;
+}
+
+input:focus {
+  outline: none;
+}
+
+.btn {
+  display: inline-block;
+  background: #a0d2eb;
+  color: black;
+  float: right;
+  padding: 15px 20px;
+  border-radius: 8px;
+  cursor: pointer transition: 0.3s;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #d0bdf4;
+}
+
+.box {
+  width: 80%;
+  height: 15px;
+  background-color: #d0bdf4;
+  opacity: 70%;
+  margin: auto;
+}
+
+/* Make the single product image full screen for smaller screens */
+@media (max-width: 800px) {
+  .product {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product-image {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .product-info {
+    width: 90%;
+    margin: auto;
+  }
+
+  .product-info p {
+    width: 100%;
+  }
+
+  .filter {
+    width: 100%;
+    margin: 0px;
+    padding-bottom: 5px;
+    justify-content: space-around;
+  }
+
+  .filter select {
+    margin: 0px;
+    padding: 0px;
+    height: 30px;
+  }
+
+  .filter-button {
+    margin: 0px;
+    padding: 0px;
+    height: 30px;
+  }
+}
