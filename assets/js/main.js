@@ -35,73 +35,73 @@ var allProducts = [];
  * Author: Kornacheva.com
  * Date Retrieved: 2022-11-20
  */
-allProducts.push(new Product("Offshoulder dress", "images/feature_1.jpeg", 100, true, "Beautiful white mini dress"));
+allProducts.push(new Product("Offshoulder dress", "assets/imgs/feature_1.jpeg", 100, true, "Beautiful white mini dress"));
 /*
  * Source: https://vkornacheva.com/Photographer_in_Lavender_Fields
  * Author: Kornacheva.com
  * Date Retrieved: 2022-11-20
  */
-allProducts.push(new Product("Gowns", "images/feature_2.jpeg", 200, true, "Charming Violet Gown"));
+allProducts.push(new Product("Gowns", "assets/imgs/feature_2.jpeg", 200, true, "Charming Violet Gown"));
 /*
  * Source: https://www.boredpanda.com/lavender-field-2/?utm_source=google&utm_medium=organic&utm_campaign=organic
  * Author: Bored Panda
  * Date Retrieved: 2022-11-20
  */
-allProducts.push(new Product("Short dresses", "images/feature_3.jpeg", 300, true, "Short pink dress"));
+allProducts.push(new Product("Short dresses", "assets/imgs/feature_3.jpeg", 300, true, "Short pink dress"));
 /*
  * Source: https://1freewallpapers.com/cute-girl-is-standing-in-lavender-field-wearing-white-dress-in-purple-background-cute
  * Author: 1FreeWallpapers
  * Date Retrieved: 2022-11-20
  */
-allProducts.push(new Product("Short dresses", "images/product_1.jpeg", 250, false, "Short pink dress"));
+allProducts.push(new Product("Short dresses", "assets/imgs/product_1.jpeg", 250, false, "Short pink dress"));
 /*
  * Source: https://www.peakpx.com/en/hd-wallpaper-desktop-opccq
  * Author: Peakpx
  * Date Retrieved: 2022-11-20
  */
-allProducts.push(new Product("Short dresses", "images/product_2.jpeg", 250, false, "Short pink dress"));
+allProducts.push(new Product("Short dresses", "assets/imgs/product_2.jpeg", 250, false, "Short pink dress"));
 /*
  * Source: https://www.peakpx.com/en/hd-wallpaper-desktop-avlwr
  * Author: Peakpx
  * Date Retrieved: 2022-11-20
  */
-allProducts.push(new Product("Short dresses", "images/product_3.jpeg", 250, false, "Short pink dress"));
+allProducts.push(new Product("Short dresses", "assets/imgs/product_3.jpeg", 250, false, "Short pink dress"));
 /*
  * Source: https://www.mihaigonguta.com/photoshoot-in-lavender/
  * Author: Mihai Gonguta
  * Date Retrieved: 2022-11-20
  */
-allProducts.push(new Product("Short dresses", "images/product_4.jpeg", 250, false, "Short pink dress"));
+allProducts.push(new Product("Short dresses", "assets/imgs/product_4.jpeg", 250, false, "Short pink dress"));
 /*
  * Source: https://www.wallpaperflare.com/beautiful-woman-dress-and-lavender-field-beauty-blonde-dancing-wallpaper-azkvt
  * Author: Wallpaper Flare
  * Date Retrieved: 2022-11-20
  */
-allProducts.push(new Product("Short dresses", "images/product_5.jpeg", 250, false, "Short pink dress"));
+allProducts.push(new Product("Short dresses", "assets/imgs/product_5.jpeg", 250, false, "Short pink dress"));
 /*
  * Source: https://www.wallpaperflare.com/woman-walking-on-lavender-field-standing-woman-surrounded-by-lavender-flower-during-daytime-wallpaper-zpaec
  * Author: Wallpaper Flare
  * Date Retrieved: 2022-11-20
  */
-allProducts.push(new Product("Short dresses", "images/product_6.jpeg", 250, false, "Short pink dress"));
+allProducts.push(new Product("Short dresses", "assets/imgs/product_6.jpeg", 250, false, "Short pink dress"));
 /*
  * Source: https://best-wallpaper.net/Purple-skirt-girl-lavender-flowers-field-butterfly_wallpapers.html
  * Author: Best Wallpaper
  * Date Retrieved: 2022-11-20
  */
-allProducts.push(new Product("Short dresses", "images/product_7.jpeg", 250, false, "Short pink dress"));
+allProducts.push(new Product("Short dresses", "assets/imgs/product_7.jpeg", 250, false, "Short pink dress"));
 /*
  * Source: https://nature.desktopnexus.com/wallpaper/2325098/
  * Author: Desktop Nexus
  * Date Retrieved: 2022-11-20
  */
-allProducts.push(new Product("Short dresses", "images/product_8.jpeg", 250, false, "Short pink dress"));
+allProducts.push(new Product("Short dresses", "assets/imgs/product_8.jpeg", 250, false, "Short pink dress"));
 /*
  * Source: https://vkornacheva.com/Photographer_in_Lavender_Fields
  * Author: Kornacheva.com
  * Date Retrieved: 2022-11-20
  */
-allProducts.push(new Product("Short dresses", "images/product_9.jpeg", 250, false, "Short pink dress"));
+allProducts.push(new Product("Short dresses", "assets/imgs/product_9.jpeg", 250, false, "Short pink dress"));
 
 // Declaring a function in the global context named isFeaturedProduct
 function isFeaturedProduct(prod) {

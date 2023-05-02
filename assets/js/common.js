@@ -23,7 +23,7 @@ var nav = `
 <nav class="navbar">
     <div id="logo-container"> 
     <a id="logo" href="index.html">
-        <img src="images/logo.png" alt="Image by (HER Closet Boutique , n.d.)" title= "Her Closet logo" />
+        <img src="assets/imgs/logo.png" alt="Image by (HER Closet Boutique , n.d.)" title= "Her Closet logo" />
     </a>
     </div>
     <a href="#" class="hamburger">
