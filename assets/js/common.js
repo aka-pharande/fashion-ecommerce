@@ -9,29 +9,28 @@
  * Date Retrieved: 2022-11-20
  */
 var nav = `
-<a href = "#main" class= "skip">Skip to main content</a>
 <nav class="navbar">
     <div id="logo-container"> 
-    <a id="logo" href="index.html">
-        <img src="assets/imgs/logo.png" alt="Image by (HER Closet Boutique , n.d.)" title= "Her Closet logo" />
-    </a>
+        <a id="logo" href="index.html">
+            <img src="assets/imgs/logo.png" alt="Image by (HER Closet Boutique , n.d.)" title= "Her Closet logo" />
+        </a>
     </div>
     <a href="#" class="hamburger">
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
     </a>
     <div class="navbar-links">
-    <div id="search_box">
-        <input type="text" placeholder="Search...">
-    </div>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about-us.html">About Us</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="cart.html">Cart</a></li>
-        <li><a href="contact-us.html">Contact Us</a></li>
-    </ul>
+        <div id="search_box">
+            <input type="text" placeholder="Search...">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
     </div>
 </nav>
 `;
