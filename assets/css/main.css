@@ -533,7 +533,7 @@ button[type=reset]:hover {
   border-radius: 10px;
   background-color: lightgray;
   padding: 30px;
-  margin: 40px 80px;
+  margin: 5% 10%;
   box-shadow: 0 12px 6px -6px #777;
 }
 
