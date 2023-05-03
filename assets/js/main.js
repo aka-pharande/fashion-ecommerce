@@ -1,20 +1,11 @@
-/*
- * Student Name: Aakanksha Pharande
- * Student ID: 041075173 
- * Course: CST8117 - Cross-Platform Web Design
- * Semester: 1
- * Assignment: 4 
- * Date Submitted: 11/12/2022
- */
-
 // Constructor function
-function Product(productName,image,price,featured,description) {
+function Product(productName, image, price, featured, description) {
     this.productName = productName;
     this.image = image;
     this.price = price;
     this.featured = featured;
     this.description = description;
-    this.displayProductListing = function() {
+    this.displayProductListing = function () {
         let product_html = '<div class="col">';
         product_html += '<a href="product.html">';
         product_html += '<img src="' + this.image + '" alt="Feature 1"  title="' + this.productName + '">';
@@ -24,7 +15,7 @@ function Product(productName,image,price,featured,description) {
         product_html += '</div>';
         return product_html;
     }
-  };
+};
 
 // Declaring an empty array named allProducts
 var allProducts = [];
@@ -119,7 +110,7 @@ function displayProducts(featured) {
     let products_html = "";
     let productsToDisplay = [];
     if (featured == true) {
-        productsToDisplay = getFeaturedProducts();  
+        productsToDisplay = getFeaturedProducts();
     }
     else {
         productsToDisplay = allProducts;
@@ -153,36 +144,36 @@ function Form(firstName, lastName, phoneNumber, email, comments, consent) {
 }
 
 // Creating a reference to contact us form
-const contactForm = $("#contact-form") [0];
+const contactForm = $("#contact-form")[0];
 
 // Creating an event on submit
 if (contactForm) {
-    contactForm.addEventListener("submit", function(e) {
-      // Preventing the form from redirecting to other page
-      e.preventDefault();
+    contactForm.addEventListener("submit", function (e) {
+        // Preventing the form from redirecting to other page
+        e.preventDefault();
 
-      const firstName = $("#first-name");
-      const lastName = $("#last-name");
-      const phoneNumber = $("#phone-number");
-      const email = $("#email");
-      const comments = $("#comments");
-      const consent = $("#consent");
+        const firstName = $("#first-name");
+        const lastName = $("#last-name");
+        const phoneNumber = $("#phone-number");
+        const email = $("#email");
+        const comments = $("#comments");
+        const consent = $("#consent");
 
-      // forms array to hold Form objects
-      var forms = new Array();
+        // forms array to hold Form objects
+        var forms = new Array();
 
-      // creating a new instance of the form type
-      let newForm = new Form(firstName.value, lastName.value, phoneNumber.value, email.value, comments.value, consent.value);
+        // creating a new instance of the form type
+        let newForm = new Form(firstName.value, lastName.value, phoneNumber.value, email.value, comments.value, consent.value);
 
-      // Adding a new form to the forms
-      forms.push(newForm);
+        // Adding a new form to the forms
+        forms.push(newForm);
 
-      // clearing the form entries
-      $("#contact-form").trigger("reset");
+        // clearing the form entries
+        $("#contact-form").trigger("reset");
 
-      // displaying a message for the successful form submission
-      $(".modal-message > p").text("Thank you! We will get back to you soon! ");
-      $("#modalStyle").modal('show');
+        // displaying a message for the successful form submission
+        $(".modal-message > p").text("Thank you! We will get back to you soon! ");
+        $("#modalStyle").modal('show');
 
-      });
+    });
 }

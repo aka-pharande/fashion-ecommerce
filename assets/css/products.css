@@ -1,13 +1,4 @@
 /*
- * Student Name: Aakanksha Pharande
- * Student ID: 041075173 
- * Course: CST8117 - Cross-Platform Web Design
- * Semester: 1
- * Assignment: 4
- * Date Submitted: 11/12/2022
- */
-
-/*
  * Styling for products section using class selector
  */
 
@@ -123,7 +114,7 @@ select:focus {
 /*
  * Styling for Single Product details page
  */
- .small-container {
+.small-container {
   /* max-width: 50%; */
   margin: auto;
   /* padding-left: 25px;
@@ -216,7 +207,8 @@ input:focus {
   float: right;
   padding: 15px 20px;
   border-radius: 8px;
-  cursor: pointer transition: 0.3s;
+  cursor: pointer;
+  transition: 0.3s;
   font-size: 1em;
   font-weight: bold;
 }

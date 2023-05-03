@@ -1,14 +1,4 @@
 /*
- * Student Name: Aakanksha Pharande
- * Student ID: 041075173 
- * Course: CST8117 - Cross-Platform Web Design
- * Semester: 1
- * Assignment: 4
- * Date Submitted: 11/12/2022
- */
-
-
-/*
  * Styling for heading and text
  *  - All headings use single font-family (Times New Roman)
  *  - Other text is differentiated from the Heading using Arial font
@@ -34,6 +24,11 @@
  * 5. Heavy Purple: #a28089
  * 6. #494D5F
  */
+
+html,
+body {
+  overflow-x: hidden;
+}
 
 h1 {
   text-align: center;
@@ -68,8 +63,9 @@ ul {
 }
 
 body {
-  margin: 0; 
+  margin: 0;
 }
+
 /*
  * Styling for Navigation Bar using ID selector
  */
@@ -85,7 +81,8 @@ body {
   border-radius: 4px;
 }
 
-.navbar:before, .navbar:after  {
+.navbar:before,
+.navbar:after {
   content: none !Important;
 }
 
@@ -340,7 +337,7 @@ body {
   border-radius: 8px;
   transition: 0.3s ease;
   font-size: 1.0em;
-  
+
 }
 
 .button-properties:hover {
@@ -443,7 +440,7 @@ mark {
   width: 10%;
   padding: 2%;
   text-align: left;
-} 
+}
 
 .links {
   display: flex;
@@ -483,14 +480,16 @@ mark {
  */
 
 .contact-info {
-  margin-left:auto;
-  margin-right:auto;
-  text-align:center;
-  width:100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 100%;
   background-color: #d0bdf4;
 }
 
-input[type=text],[type=tel], [type=email],
+input[type=text],
+[type=tel],
+[type=email],
 textarea {
   width: 100%;
   padding: 10px;
@@ -509,7 +508,8 @@ textarea {
 }
 
 /* Styling to form buttons */
-button[type=submit],[type=reset] {
+button[type=submit],
+[type=reset] {
   background-color: #a0d2eb;
   color: black;
   padding: 12px 20px;
@@ -537,7 +537,7 @@ button[type=reset]:hover {
   box-shadow: 0 12px 6px -6px #777;
 }
 
-#contact-form > p > label {
+#contact-form>p>label {
   display: block;
 }
 

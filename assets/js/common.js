@@ -1,13 +1,3 @@
-/*
- * Student Name: Aakanksha Pharande
- * Student ID: 041075173 
- * Course: CST8117 - Cross-Platform Web Design
- * Semester: 1
- * Assignment: 4 
- * Date Submitted: 11/12/2022
- */
-
-
 /* 
  * Navigation Bar (Header Section) 
  * This section will provide a user the ability to move between different pages.
@@ -72,17 +62,17 @@ var footer = `
 
 let headerElem = document.getElementById("header");
 if (headerElem) {
-    headerElem.innerHTML= nav;
+    headerElem.innerHTML = nav;
 }
 
 let footerElem = document.getElementById("footer");
 if (footerElem) {
-    footerElem.innerHTML= footer;
+    footerElem.innerHTML = footer;
 }
 
 const toggleButton = document.getElementsByClassName('hamburger')[0]
 const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
 toggleButton.addEventListener('click', () => {
-  navbarLinks.classList.toggle('active')
+    navbarLinks.classList.toggle('active')
 })
