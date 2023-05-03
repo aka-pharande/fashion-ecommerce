@@ -456,7 +456,8 @@ mark {
   border-right: 1px solid grey;
   padding-right: 1%;
   padding-left: 1%;
-  height: 45px;
+  height: 25px;
+  text-align: center;
 }
 
 .links li a:link {
